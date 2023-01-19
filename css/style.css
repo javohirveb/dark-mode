@@ -1,0 +1,162 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(215, 239, 250);
+    transition: 1s;
+}
+
+button {
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between; 
+    padding: 30px;
+}
+
+.show__modal {
+    background-color: rgba(213, 168, 255);
+    padding: 6px 14px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    border-radius: 12px;
+    transition: 1s;
+}
+
+.modal {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, 10%);
+    transition: 1s;
+    width: 400px;
+    height: 60vh;
+    background-color: rgb(213, 168, 255);
+    border-radius: 10px;
+    box-shadow: 20px 20px 75px 15px rgba(0, 0, 0, 0.3);
+}
+
+.close__modal {
+    font-size: 30px;
+    color: rgb(39, 37, 37);
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.close__modal:hover {
+    transform: scale(1.2);
+}
+
+.counter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.counter h1 {
+    text-align: center;
+    margin-bottom: 80px;
+    transition: 1s;
+}
+
+.counter__btn {
+    display: flex;
+    gap: 40px;
+}
+
+.counter__remove, .counter__add {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 60px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    outline: none;
+    border-bottom: 4px solid blue;
+    transition: 0.3s;
+}
+
+.counter__remove:hover, .counter__add:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.other {
+    color: red;
+    transform: scale(1.5);
+}
+
+.dark-mode__box {
+    display: flex;
+    gap: 40px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: 2px solid black;
+    position: relative;
+    cursor: pointer;
+}
+
+.dark-mode__box span {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: blue;
+    left: 2px;
+    top: 3px;
+    z-index: 100;
+    transition: 1s;
+}
+
+.margin__left {
+    margin-left: 63px;
+}
+
+.fa-sun {
+    color: rgb(100, 56, 0);
+}
+
+.fa-moon {
+    color: white;
+}
+
+.dark__mode {
+    background-color: rgb(50, 50, 50);
+    transition: 1s;
+}
+
+.bg-dark {
+    background-color: rgb(31, 65, 68);
+    color: white;
+}
+
+.text-white {
+    color: white;
+}
+
+.border-white {
+    border: 2px solid white;
+}
