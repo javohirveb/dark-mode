@@ -46,7 +46,8 @@ button {
     left: 50%;
     transform: translate(-50%, 10%);
     transition: 1s;
-    width: 400px;
+    max-width: 400px;
+    width: 90%;
     height: 60vh;
     background-color: rgb(213, 168, 255);
     border-radius: 10px;
